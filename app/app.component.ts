@@ -5,15 +5,10 @@ templateUrl: './app.component.html',
 styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-title = 'formularz';
 imieinazwisko: string = "";
-email: string = "Proszę podać email";
-produkt: string = "";
-ilosc: number = 0;
-wiadomosc: string = "Jeśli masz uwagi, wpisz je tu";
+ocena: string = "";
+status: string = "";
 onSubmit() {
-console.log(this.imieinazwisko, 'dziękujemy za zamówienie', this.produkt,
-'w ilości', this.ilosc, 'Szczegóły zamówienia zostały wysłane na adres email',
-this.email, 'Dziękujemy za uwagi:', this.wiadomosc);
+console.log(this.imieinazwisko, 'dziękujemy za wypełnienie ankiety', 'twoja ocena jakości obsługi klienta to:', this.ocena, 'twój status zawodowy to:', this.status);
 }
 }
